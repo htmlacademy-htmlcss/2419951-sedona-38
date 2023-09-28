@@ -5,7 +5,7 @@
   <title>HTML Academy: Отели в Седоне</title>
 </head>
 <body>
-<header class="page-header">
+<header class="page-header" data-test="header">
   <a class="header-logo" href="index.html">
     <img src="#" alt="Логотип Sedona.">
   </a>
@@ -36,7 +36,7 @@
     <button class="button" type="button">ХОЧУ СЮДА!</button>
   </nav>
 </header>
-<main class="main-catalog">
+<main class="main-catalog" data-test="main">
   <header class="catalog-header">
     <h1>Гостиницы Седоны</h1>
     <ul class="breadcrumbs">
@@ -50,7 +50,7 @@
       </li>
     </ul>
   </header>
-  <section class="hotels-search">
+  <section class="hotels-search" data-test="filter">
     <h2 class="visually-hidden">Фильтры поиска гостиниц</h2>
     <form class="hotels-search-filter" action="https://echo.htmlacademy.ru/" method="get">
       <fieldset class="hotels-search-filter-group">
@@ -93,6 +93,8 @@
       <button class="button" type="submit">Применить</button>
       <button class="button" type="reset">Сбросить</button>
     </form>
+  </section>
+  <section data-test="catalog">
     <h2 class="visually-hidden">Результаты поиска</h2>
     <p><b>НАЙДЕНО ГОСТИНИЦ: 38</b></p>
     <select class="select-control" aria-label="Сортировка">
@@ -229,7 +231,7 @@
       </li>
     </ol>
   </section>
-  <section class="subscription">
+  <section class="subscription" data-test="subscribe">
     <h2 class="visually-hidden">Рассылка</h2>
     <form action="https://echo.htmlacademy.ru/" method="post">
       <p>Подпишитесь на рассылку</p>
@@ -241,7 +243,7 @@
     </form>
   </section>
 </main>
-<footer class="page-footer">
+<footer class="page-footer" data-test="footer">
   <section class="footer-social">
     <h2 class="visually-hidden">Мы в социальных сетях</h2>
     <ul class="socials-list">
