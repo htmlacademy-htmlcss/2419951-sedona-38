@@ -34,8 +34,10 @@
             <img src="images/favourites-icon.svg" width="18" height="17" alt="Избранное.">
           </a>
         </li>
+        <li>
+          <button class="button-small _756157-background" type="button">ХОЧУ СЮДА!</button>
+        </li>
       </ul>
-      <button class="button-small _756157-background" type="button">ХОЧУ СЮДА!</button>
     </nav>
   </header>
   <main class="main-index main-container" data-test="main">
@@ -45,9 +47,11 @@
            alt="Welcome to the gorgeous Sedona. 'Because the Grand Canyon sucks!'">
     </section>
     <section class="advantages" data-test="advantages">
-      <h2 class="visually-hidden">Преимущества</h2>
-      <p class="advantages-slogan">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
-      <p>Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
+      <div class="advantage-header-and-slogan-wrapper">
+        <h2 class="visually-hidden">Преимущества</h2>
+        <p class="advantages-slogan">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
+        <p>Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
+      </div>
       <ul class="advantages-list">
         <li class="advantages-list-item advantage-item-with-img-wrapper">
           <div class="advantage-item-wrapper">
@@ -89,8 +93,10 @@
     </section>
     <section class="services" data-test="search">
       <h2 class="visually-hidden">Сервис</h2>
-      <p><b>Приезжайте в Седону отдохнуть в комфорте и уюте!</b></p>
-      <p>Опытный персонал и качественное обслуживание!</p>
+      <div class="services-promo-text-wrapper">
+        <p class="services-promo-text">Приезжайте в Седону отдохнуть в комфорте и уюте!</p>
+        <p>Опытный персонал и качественное обслуживание!</p>
+      </div>
       <ul class="services-list">
         <li class="services-list-item">
           <div class="service-item-wrapper housing-icon">
@@ -124,11 +130,13 @@
       <form action="https://echo.htmlacademy.ru/" method="post">
         <p class="subscription-call-to-action">Подпишитесь на рассылку</p>
         <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
-        <label for="newsletter-email" hidden>Email</label>
-        <input class="newsletter-email-field" type="email" placeholder="Ваш e-mail" name="newsletter-email"
-               id="newsletter-email"
-               required>
-        <button class="button-medium _82B3D3-background newsletter-button" type="submit">Подписаться</button>
+        <div class="newsletter-email-wrapper">
+          <label for="newsletter-email" hidden>Email</label>
+          <input class="newsletter-email-field" type="email" placeholder="Ваш e-mail" name="newsletter-email"
+                 id="newsletter-email"
+                 required>
+          <button class="button-medium _82B3D3-background newsletter-button" type="submit">Подписаться</button>
+        </div>
       </form>
     </section>
   </main>

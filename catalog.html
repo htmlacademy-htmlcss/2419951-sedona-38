@@ -34,8 +34,10 @@
             <img src="images/favourites-icon.svg" width="18" height="17" alt="Избранное.">
           </a>
         </li>
+        <li>
+          <button class="button-small _756157-background" type="button">ХОЧУ СЮДА!</button>
+        </li>
       </ul>
-      <button class="button-small _756157-background" type="button">ХОЧУ СЮДА!</button>
     </nav>
   </header>
   <main class="main-catalog main-container" data-test="main">
@@ -98,58 +100,66 @@
         </form>
       </section>
     </div>
-    <section data-test="catalog">
+    <section class="catalog-search-results-section" data-test="catalog">
       <div class="hotels-found-wrapper">
         <h2 class="visually-hidden">Результаты поиска</h2>
         <p class="catalog-search-result"><b>НАЙДЕНО ГОСТИНИЦ: 38</b></p>
-        <select class="select-control" aria-label="Сортировка">
+        <select class="hotels-sorting-select" aria-label="Сортировка">
           <option value="cheap">Сначала дешевые</option>
         </select>
-        <a href="#" class="view-mode-button view-mode-button-selected">
-          <svg
-            class="html-academy-logo"
-            xmlns="http://www.w3.org/2000/svg"
-            width="16"
-            height="14"
-            fill="none"
-            role="img"
-            aria-label="Показать мелкие значки.">
-            <path fill="#000"
-                  d="M4 0H0v6h4V0ZM16 0h-4v6h4V0ZM10 0H6v6h4V0ZM4 8H0v6h4V8ZM16 8h-4v6h4V8ZM10 8H6v6h4V8Z"/>
-          </svg>
-        </a>
-        <a href="#" class="view-mode-button">
-          <svg
-            class="html-academy-logo"
-            xmlns="http://www.w3.org/2000/svg"
-            width="16"
-            height="14"
-            fill="none"
-            role="img"
-            aria-label="Показать крупные значки.">
-            <path fill="#000"
-                  d="M16 12H0v2h16v-2ZM14 2v6H2V2h12Zm2-2H0v10h16V0Z"/>
-          </svg>
-        </a>
-        <a href="#" class="view-mode-button">
-          <svg
-            class="html-academy-logo"
-            xmlns="http://www.w3.org/2000/svg"
-            width="16"
-            height="14"
-            fill="none"
-            role="img"
-            aria-label="Показать списком.">
-            <path fill="#000"
-                  d="M2 0H0v2h2V0ZM16 0H4v2h12V0ZM2 4H0v2h2V4ZM16 4H4v2h12V4ZM2 8H0v2h2V8ZM16 8H4v2h12V8ZM2 12H0v2h2v-2ZM16 12H4v2h12v-2Z"/>
-          </svg>
-        </a>
+        <ul class="view-mode-list">
+          <li>
+            <a href="#" class="view-mode-button view-mode-button-selected">
+              <svg
+                class="html-academy-logo"
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="14"
+                fill="none"
+                role="img"
+                aria-label="Показать мелкие значки.">
+                <path fill="#000"
+                      d="M4 0H0v6h4V0ZM16 0h-4v6h4V0ZM10 0H6v6h4V0ZM4 8H0v6h4V8ZM16 8h-4v6h4V8ZM10 8H6v6h4V8Z"/>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="view-mode-button">
+              <svg
+                class="html-academy-logo"
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="14"
+                fill="none"
+                role="img"
+                aria-label="Показать крупные значки.">
+                <path fill="#000"
+                      d="M16 12H0v2h16v-2ZM14 2v6H2V2h12Zm2-2H0v10h16V0Z"/>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="view-mode-button">
+              <svg
+                class="html-academy-logo"
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="14"
+                fill="none"
+                role="img"
+                aria-label="Показать списком.">
+                <path fill="#000"
+                      d="M2 0H0v2h2V0ZM16 0H4v2h12V0ZM2 4H0v2h2V4ZM16 4H4v2h12V4ZM2 8H0v2h2V8ZM16 8H4v2h12V8ZM2 12H0v2h2v-2ZM16 12H4v2h12v-2Z"/>
+              </svg>
+            </a>
+          </li>
+        </ul>
       </div>
-      <ul class="product-list">
-        <li class="product-card">
-          <div class="product-card-wrapper">
-            <a class="product-card-link" href="#">
-              <img class="product-card-img" src="images/hotel-cards/canyon-promo-amara-resort.jpg" width="300"
+      <ul class="hotel-list">
+        <li class="hotel-card">
+          <div class="hotel-card-wrapper">
+            <a class="hotel-card-link" href="#">
+              <img class="hotel-card-img" src="images/hotel-cards/canyon-promo-amara-resort.jpg" width="300"
                    height="212" alt="Каньон и звездное небо.">
             </a>
             <h3 class="hotel-name">Amara Resort & Spa</h3>
@@ -161,10 +171,10 @@
             <p class="hotel-rating">РЕЙТИНГ: 8,5</p>
           </div>
         </li>
-        <li class="product-card">
-          <div class="product-card-wrapper">
-            <a class="product-card-link" href="#">
-              <img class="product-card-img" src="images/hotel-cards/poco-diablo-rainbow.jpg" width="300" height="212"
+        <li class="hotel-card">
+          <div class="hotel-card-wrapper">
+            <a class="hotel-card-link" href="#">
+              <img class="hotel-card-img" src="images/hotel-cards/poco-diablo-rainbow.jpg" width="300" height="212"
                    alt="Вид на Поко Диабло.">
             </a>
             <h3 class="hotel-name">Villas at Poco Diablo</h3>
@@ -176,10 +186,10 @@
             <p class="hotel-rating">РЕЙТИНГ: 9,2</p>
           </div>
         </li>
-        <li class="product-card">
-          <div class="product-card-wrapper">
-            <a class="product-card-link" href="#">
-              <img class="product-card-img" src="images/hotel-cards/mountain-promo-desert-quail-inn.jpg" width="300"
+        <li class="hotel-card">
+          <div class="hotel-card-wrapper">
+            <a class="hotel-card-link" href="#">
+              <img class="hotel-card-img" src="images/hotel-cards/mountain-promo-desert-quail-inn.jpg" width="300"
                    height="212" alt="Гора и голубое небо.">
             </a>
             <h3 class="hotel-name">Desert Quail Inn</h3>
@@ -191,10 +201,10 @@
             <p class="hotel-rating">РЕЙТИНГ: 6,9</p>
           </div>
         </li>
-        <li class="product-card">
-          <div class="product-card-wrapper">
-            <a class="product-card-link" href="#">
-              <img class="product-card-img" src="images/hotel-cards/mountain-promo-green-tree-inn.jpg" width="300"
+        <li class="hotel-card">
+          <div class="hotel-card-wrapper">
+            <a class="hotel-card-link" href="#">
+              <img class="hotel-card-img" src="images/hotel-cards/mountain-promo-green-tree-inn.jpg" width="300"
                    height="212" alt="Скала под ночным звездным небом.">
             </a>
             <h3 class="hotel-name">GreenTree Inn</h3>
@@ -210,37 +220,37 @@
       <ol class="hotels-search-pagination">
         <li class="hotels-search-pagination-item">
           <a class="hotels-search-pagination-button hotels-search-pagination-button-current" href="#">
-            <span class="visually-hidden">1</span>
+            <span>1</span>
           </a>
         </li>
         <li class="hotels-search-pagination-item">
           <a class="hotels-search-pagination-button _82B3D3-background" href="#">
-            <span class="visually-hidden">2</span>
+            <span>2</span>
           </a>
         </li>
         <li class="hotels-search-pagination-item">
           <a class="hotels-search-pagination-button _82B3D3-background" href="#">
-            <span class="visually-hidden">3</span>
+            <span>3</span>
           </a>
         </li>
         <li class="hotels-search-pagination-item">
           <a class="hotels-search-pagination-button _82B3D3-background" href="#">
-            <span class="visually-hidden">4</span>
+            <span>4</span>
           </a>
         </li>
         <li class="hotels-search-pagination-item">
           <a class="hotels-search-pagination-button _82B3D3-background" href="#">
-            <span class="visually-hidden">5</span>
+            <span>5</span>
           </a>
         </li>
         <li class="hotels-search-pagination-item">
           <button class="hotels-search-other-pages-button" type="button">
-            <span class="visually-hidden">...</span>
+            <span>...</span>
           </button>
         </li>
         <li class="hotels-search-pagination-item">
           <a class="hotels-search-pagination-button _82B3D3-background" href="#">
-            <span class="visually-hidden">10</span>
+            <span>10</span>
           </a>
         </li>
       </ol>
@@ -250,11 +260,13 @@
       <form action="https://echo.htmlacademy.ru/" method="post">
         <p class="catalog-subscription-call-to-action">Подпишитесь на рассылку</p>
         <p>Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
-        <label for="newsletter-email" hidden>Email</label>
-        <input class="newsletter-email-field _F2F2F2-background" type="email" placeholder="Ваш e-mail"
-               name="newsletter-email" id="newsletter-email"
-               required>
-        <button class="button-medium _82B3D3-background newsletter-button" type="submit">Подписаться</button>
+        <div class="newsletter-email-wrapper">
+          <label for="newsletter-email" hidden>Email</label>
+          <input class="newsletter-email-field _F2F2F2-background" type="email" placeholder="Ваш e-mail"
+                 name="newsletter-email" id="newsletter-email"
+                 required>
+          <button class="button-medium _82B3D3-background newsletter-button" type="submit">Подписаться</button>
+        </div>
       </form>
     </section>
   </main>
