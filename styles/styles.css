@@ -18,6 +18,18 @@ html {
   height: 100%;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
 body {
   height: 100%;
   width: 1280px;
@@ -44,7 +56,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100%;
-  width: 1200px;
+  max-width: 1200px;
   margin: 0 auto;
   background-color: #FFF;
 }
@@ -59,6 +71,8 @@ body {
   display: flex;
   align-items: center;
   padding: 0 70px;
+  margin-bottom: -10px;
+  position: relative;
 }
 
 .header-logo {
@@ -68,18 +82,18 @@ body {
 }
 
 .navigation {
-  width: 890px;
+  max-width: 890px;
   display: flex;
-  flex-wrap: wrap;
+  flex-grow: 1;
 }
 
 .navigation-list {
-  list-style-type: none;
   display: flex;
   flex-wrap: wrap;
-  width: 450px;
+  max-width: 450px;
   margin: 0;
   padding: 0;
+  list-style-type: none;
 }
 
 .navigation-user {
@@ -152,13 +166,11 @@ body {
   margin: 0;
   padding: 0;
   display: flex;
-  width: 1200px;
   flex-wrap: wrap;
 }
 
 .advantage-item-with-img-wrapper {
   display: flex;
-  width: 1200px;
   margin: 0;
   padding: 0;
 }
@@ -168,9 +180,18 @@ body {
 }
 
 .advantage-item-wrapper {
-  padding: 103px 85px;
-  width: 230px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-top: auto;
+  margin-bottom: auto;
+  padding: 90px 85px;
+  width: 400px;
+  min-height: 385px;
+}
 
+.advantage-image-wrapper img {
+  display: block;
 }
 
 .advantages-list-item:nth-child(odd) .advantage-item-wrapper {
@@ -248,7 +269,6 @@ body {
   max-width: 400px;
   padding: 80px 85px;
   text-align: center;
-  box-sizing: border-box;
 }
 
 .services-list-item:nth-child(odd) .service-item-wrapper {
@@ -423,7 +443,6 @@ body {
 
 .hotels-search-pagination-button {
   display: block;
-  box-sizing: border-box;
   border-radius: 4px;
   color: #FFF;
   font-size: 20px;
@@ -533,7 +552,6 @@ body {
   text-decoration: none;
   border-radius: 4px;
   border: 2px solid #E5E5E5;
-  box-sizing: border-box;
 }
 
 .view-mode-button-selected {
@@ -584,7 +602,6 @@ body {
   line-height: 24px;
   opacity: 0.6;
   height: 52px;
-  box-sizing: border-box;
   width: 452px;
 }
 
