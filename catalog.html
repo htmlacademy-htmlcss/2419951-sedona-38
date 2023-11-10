@@ -30,12 +30,12 @@
           </a>
         </li>
         <li class="navigation-item">
-          <a class="navigation-link" href="#">
+          <a class="navigation-link favourites-link" href="#">
             <img src="images/favourites-icon.svg" width="18" height="17" alt="Избранное.">
           </a>
         </li>
       </ul>
-      <button class="button-small _756157-background" type="button">ХОЧУ СЮДА!</button>
+      <button class="button-small button-primary-style" type="button">ХОЧУ СЮДА!</button>
     </nav>
   </header>
   <main class="main-catalog main-container" data-test="main">
@@ -105,16 +105,17 @@
           <fieldset class="hotels-search-filter-group">
             <legend class="hotels-search-filter-title">Стоимость, ₽:</legend>
             <div class="cost-range-input-wrapper">
-              <label><input class="cost-range-input" type="text" value="0" name="cost-min" size="8" maxlength="7"><span
+              <label><input class="cost-range-input" type="text" value="0" name="cost-min" size="6" maxlength="7"><span
                 class="from-placeholder">от</span></label>
-              <label><input class="cost-range-input" type="text" value="9000" name="cost-max" size="8" maxlength="7"><span
+              <label><input class="cost-range-input" type="text" value="9000" name="cost-max" size="7"
+                            maxlength="7"><span
                 class="to-placeholder">до</span></label>
             </div>
             <!--    <input type="range" multiple name="" min="0" max="12000" value="9000" step="100" />-->
             <!--    вроде такй multirange еще не умеем делать -->
           </fieldset>
           <div class="hotels-search-buttons-wrapper">
-            <button class="button-small _82B3D3-background" type="submit">Применить</button>
+            <button class="button-small button-alternative-style" type="submit">Применить</button>
             <button class="no-border-button white-font" type="reset">Сбросить</button>
           </div>
         </form>
@@ -131,7 +132,7 @@
           <li>
             <a href="#" class="view-mode-button view-mode-button-selected">
               <svg
-                class="html-academy-logo"
+                class="view-mode-button-icon"
                 xmlns="http://www.w3.org/2000/svg"
                 width="16"
                 height="14"
@@ -146,7 +147,7 @@
           <li>
             <a href="#" class="view-mode-button">
               <svg
-                class="html-academy-logo"
+                class="view-mode-button-icon"
                 xmlns="http://www.w3.org/2000/svg"
                 width="16"
                 height="14"
@@ -161,7 +162,7 @@
           <li>
             <a href="#" class="view-mode-button">
               <svg
-                class="html-academy-logo"
+                class="view-mode-button-icon"
                 xmlns="http://www.w3.org/2000/svg"
                 width="16"
                 height="14"
@@ -185,8 +186,9 @@
             <h3 class="hotel-name">Amara Resort & Spa</h3>
             <p>Гостиница <span class="right-aligned">От 4000 ₽</span></p>
             <div class="inner-hotel-card-wrapper">
-              <a class="button-small hotel-card-button-small _756157-background" href="#">ПОДРОБНЕЕ</a>
-              <button class="button-small hotel-card-button-small _82B3D3-background" type="button">В ИЗБРАННОЕ</button>
+              <a class="button-small hotel-card-button-small button-primary-style" href="#">ПОДРОБНЕЕ</a>
+              <button class="button-small hotel-card-button-small button-alternative-style" type="button">В ИЗБРАННОЕ
+              </button>
               <img class="category-star-img" src="images/hotel-cards/category-a-hotel.svg" width="140" height="37"
                    alt="Четырехзвездочный отель">
               <p class="hotel-rating">РЕЙТИНГ: 8,5</p>
@@ -202,8 +204,10 @@
             <h3 class="hotel-name">Villas at Poco Diablo</h3>
             <p>Гостиница <span class="right-aligned">От 5000 ₽</span></p>
             <div class="inner-hotel-card-wrapper">
-              <a class="button-small _756157-background" href="#">ПОДРОБНЕЕ</a>
-              <button class="button-small hotel-card-button-small _7DB54F-background" type="button">В ИЗБРАННОМ</button>
+              <a class="button-small button-primary-style" href="#">ПОДРОБНЕЕ</a>
+              <button class="button-small hotel-card-button-small button-already-selected-style" type="button">В
+                ИЗБРАННОМ
+              </button>
               <img class="category-star-img" src="images/hotel-cards/category-a-hotel.svg" width="140" height="37"
                    alt="Четырехзвездочный отель">
               <p class="hotel-rating">РЕЙТИНГ: 9,2</p>
@@ -219,8 +223,9 @@
             <h3 class="hotel-name">Desert Quail Inn</h3>
             <p>Гостиница <span class="right-aligned">От 2500 ₽</span></p>
             <div class="inner-hotel-card-wrapper">
-              <a class="button-small _756157-background" href="#">ПОДРОБНЕЕ</a>
-              <button class="button-small hotel-card-button-small _82B3D3-background" type="button">В ИЗБРАННОЕ</button>
+              <a class="button-small button-primary-style" href="#">ПОДРОБНЕЕ</a>
+              <button class="button-small hotel-card-button-small button-alternative-style" type="button">В ИЗБРАННОЕ
+              </button>
               <img class="category-star-img" src="images/hotel-cards/category-b-hotel.svg" width="140" height="37"
                    alt="Трехзвездочный отель">
               <p class="hotel-rating">РЕЙТИНГ: 6,9</p>
@@ -236,8 +241,9 @@
             <h3 class="hotel-name">GreenTree Inn</h3>
             <p>Гостиница <span class="right-aligned">От 1500 ₽</span></p>
             <div class="inner-hotel-card-wrapper">
-              <a class="button-small _756157-background" href="#">ПОДРОБНЕЕ</a>
-              <button class="button-small hotel-card-button-small _82B3D3-background" type="button">В ИЗБРАННОЕ</button>
+              <a class="button-small button-primary-style" href="#">ПОДРОБНЕЕ</a>
+              <button class="button-small hotel-card-button-small button-alternative-style" type="button">В ИЗБРАННОЕ
+              </button>
               <img class="category-star-img" src="images/hotel-cards/category-c-hotel.svg" width="140" height="37"
                    alt="Двухзвездочный отель">
               <p class="hotel-rating">РЕЙТИНГ: 5,0</p>
@@ -252,17 +258,17 @@
           </a>
         </li>
         <li class="hotels-search-pagination-item">
-          <a class="hotels-search-pagination-button _82B3D3-background" href="#">
+          <a class="hotels-search-pagination-button button-alternative-style" href="#">
             <span>2</span>
           </a>
         </li>
         <li class="hotels-search-pagination-item">
-          <a class="hotels-search-pagination-button _82B3D3-background" href="#">
+          <a class="hotels-search-pagination-button button-alternative-style" href="#">
             <span>3</span>
           </a>
         </li>
         <li class="hotels-search-pagination-item">
-          <a class="hotels-search-pagination-button _82B3D3-background" href="#">
+          <a class="hotels-search-pagination-button button-alternative-style" href="#">
             <span>4</span>
           </a>
         </li>
@@ -272,7 +278,7 @@
           </button>
         </li>
         <li class="hotels-search-pagination-item">
-          <a class="hotels-search-pagination-button _82B3D3-background" href="#">
+          <a class="hotels-search-pagination-button button-alternative-style" href="#">
             <span>10</span>
           </a>
         </li>
@@ -288,7 +294,7 @@
           <input class="newsletter-email-field _F2F2F2-background" type="email" placeholder="Ваш e-mail"
                  name="newsletter-email" id="newsletter-email"
                  required>
-          <button class="button-medium _82B3D3-background newsletter-button" type="submit">Подписаться</button>
+          <button class="button-medium button-alternative-style newsletter-button" type="submit">Подписаться</button>
         </div>
       </form>
     </section>
