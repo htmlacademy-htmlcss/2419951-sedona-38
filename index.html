@@ -35,7 +35,7 @@
           </a>
         </li>
       </ul>
-      <button class="button-small _756157-background" type="button">ХОЧУ СЮДА!</button>
+      <button class="button-small button-primary-style" type="button">ХОЧУ СЮДА!</button>
     </nav>
   </header>
   <main class="main-index main-container" data-test="main">
@@ -80,7 +80,7 @@
         </li>
         <li class="advantages-list-item advantage-item-with-img-wrapper">
           <div class="advantage-item-wrapper">
-            <h3 class="advantages-title white-font">Там есть мост дьявола</h3>
+            <h3 class="advantages-title white-font">Там есть мост&nbsp;дьявола</h3>
             <p>Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
           </div>
           <div class="advantage-image-wrapper">
@@ -91,10 +91,8 @@
     </section>
     <section class="services" data-test="search">
       <h2 class="visually-hidden">Сервис</h2>
-      <div class="services-promo-text-wrapper">
-        <p class="services-promo-text">Приезжайте в Седону отдохнуть в комфорте и уюте!</p>
-        <p>Опытный персонал и качественное обслуживание!</p>
-      </div>
+      <p class="services-promo-text">Приезжайте в Седону отдохнуть в комфорте и уюте!</p>
+      <p>Опытный персонал и качественное обслуживание!</p>
       <ul class="services-list">
         <li class="services-list-item">
           <div class="service-item-wrapper housing-icon">
@@ -118,24 +116,26 @@
       <div class="call-to-action-wrapper">
         <h2 class="visually-hidden">Поиск отеля</h2>
         <p class="question-before-call-to-action">Заинтересовались?</p>
-        <p class="hotel-search-call-to-action">Укажите предполагаемые даты поездки, и мы покажем вам лучшие
+        <p class="hotel-search-call-to-action">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие
           предложения гостиниц в Седоне</p>
-        <a class="button-medium _756157-background" href="catalog.html">Поиск гостиницы в Седоне</a>
+        <a class="button-medium button-primary-style" href="catalog.html">Поиск гостиницы в Седоне</a>
       </div>
     </section>
     <section class="subscription subscription-background" data-test="subscribe">
       <h2 class="visually-hidden">Рассылка</h2>
-      <form action="https://echo.htmlacademy.ru/" method="post">
-        <p class="subscription-call-to-action">Подпишитесь на рассылку</p>
-        <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
-        <div class="newsletter-email-wrapper">
-          <label for="newsletter-email" hidden>Email</label>
-          <input class="newsletter-email-field" type="email" placeholder="Ваш e-mail" name="newsletter-email"
-                 id="newsletter-email"
-                 required>
-          <button class="button-medium _82B3D3-background newsletter-button" type="submit">Подписаться</button>
-        </div>
-      </form>
+      <div class="subscription-wrapper">
+        <form action="https://echo.htmlacademy.ru/" method="post">
+          <p class="subscription-call-to-action">Подпишитесь на рассылку</p>
+          <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
+          <div class="newsletter-email-wrapper">
+            <label for="newsletter-email" hidden>Email</label>
+            <input class="newsletter-email-field" type="email" placeholder="Ваш e-mail" name="newsletter-email"
+                   id="newsletter-email"
+                   required>
+            <button class="button-medium button-alternative-style newsletter-button" type="submit">Подписаться</button>
+          </div>
+        </form>
+      </div>
     </section>
   </main>
   <footer class="page-footer footer-container" data-test="footer">
