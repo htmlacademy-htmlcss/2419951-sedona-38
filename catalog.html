@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <title>HTML Academy: Отели в Седоне</title>
   <link rel="stylesheet" href="styles/styles.css">
+  <link rel="shortcut icon" href="images/favicon-7.ico" type="image/x-icon">
 </head>
 <body>
 <div class="wrapper">
@@ -61,20 +62,23 @@
             <ul class="hotels-search-filter-list">
               <li class="hotels-search-filter-list-item">
                 <label class="control">
-                  <input class="control-input" type="checkbox" checked name="Swimming pool">
-                  Бассейн
+                  <input class="visually-hidden control-input" type="checkbox" name="swimming-pool" checked>
+                  <span class="control-mark"></span>
+                  <span class="control-label">Бассейн</span>
                 </label>
               </li>
               <li class="hotels-search-filter-list-item">
                 <label class="control">
-                  <input class="control-input" type="checkbox" checked name="Parking">
-                  Паркова
+                  <input class="visually-hidden control-input" type="checkbox" name="parking" checked>
+                  <span class="control-mark"></span>
+                  <span class="control-label">Парковка</span>
                 </label>
               </li>
               <li class="hotels-search-filter-list-item">
                 <label class="control">
-                  <input class="control-input" type="checkbox" name="Wi-Fi">
-                  Wi-Fi
+                  <input class="visually-hidden control-input" type="checkbox" name="wi-fi">
+                  <span class="control-mark"></span>
+                  <span class="control-label">Wi-Fi</span>
                 </label>
               </li>
             </ul>
@@ -84,35 +88,48 @@
             <ul class="hotels-search-filter-list">
               <li class="hotels-search-filter-list-item">
                 <label class="control">
-                  <input class="control-input" type="radio" checked name="accommodation-type">
-                  Гостиница
+                  <input class="visually-hidden control-input" type="radio" name="accommodation-type" value="hotel"
+                         checked>
+                  <span class="control-mark"></span>
+                  <span class="control-label">Гостиница</span>
                 </label>
               </li>
               <li class="hotels-search-filter-list-item">
                 <label class="control">
-                  <input class="control-input" type="radio" name="accommodation-type">
-                  Мотель
+                  <input class="visually-hidden control-input" type="radio" name="accommodation-type" value="motel">
+                  <span class="control-mark"></span>
+                  <span class="control-label">Мотель</span>
                 </label>
               </li>
               <li class="hotels-search-filter-list-item">
                 <label class="control">
-                  <input class="control-input" type="radio" name="accommodation-type">
-                  Апартаменты
+                  <input class="visually-hidden control-input" type="radio" name="accommodation-type" value="apartments">
+                  <span class="control-mark"></span>
+                  <span class="control-label">Апартаменты</span>
                 </label>
               </li>
             </ul>
           </fieldset>
           <fieldset class="hotels-search-filter-group">
             <legend class="hotels-search-filter-title">Стоимость, ₽:</legend>
-            <div class="cost-range-input-wrapper">
-              <label><input class="cost-range-input" type="text" value="0" name="cost-min" size="6" maxlength="7"><span
-                class="from-placeholder">от</span></label>
-              <label><input class="cost-range-input" type="text" value="9000" name="cost-max" size="7"
-                            maxlength="7"><span
-                class="to-placeholder">до</span></label>
+            <div class="range">
+              <div class="cost-range-input-wrapper">
+                <label><input class="cost-range-input" type="number" value="0" name="min-price" max="999999"
+                              min="0"><span class="from-to-placeholder">от</span></label>
+                <label><input class="cost-range-input" type="number" value="9000" name="max-price" max="999999"
+                              min="1"><span class="from-to-placeholder">до</span></label>
+              </div>
+              <div class="range-scale">
+                <div class="range-bar" style="left: 0; width: 226px">
+                  <button class="range-toggle toggle-min">
+                    <span class="visually-hidden">Изменить минимальную цену</span>
+                  </button>
+                  <button class="range-toggle toggle-max">
+                    <span class="visually-hidden">Изменить максимальную цену</span>
+                  </button>
+                </div>
+              </div>
             </div>
-            <!--    <input type="range" multiple name="" min="0" max="12000" value="9000" step="100" />-->
-            <!--    вроде такй multirange еще не умеем делать -->
           </fieldset>
           <div class="hotels-search-buttons-wrapper">
             <button class="button-small button-alternative-style" type="submit">Применить</button>
