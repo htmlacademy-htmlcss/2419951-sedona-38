@@ -32,6 +32,7 @@ img {
 
 body {
   height: 100%;
+  min-width: 1280px;
   padding-left: 40px;
   padding-right: 40px;
   margin: 0 auto;
@@ -218,6 +219,7 @@ body {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   align-items: stretch;
+
   margin: 0;
   padding: 0;
 
@@ -244,7 +246,7 @@ body {
   justify-content: flex-start;
   padding: 102px 85px;
   width: 400px;
-  min-height: 385px;
+  height: 100%;
 }
 
 .advantages-title:after {
@@ -691,6 +693,10 @@ input[type=number] {
   height: 20px;
   background-color: #ffffff;
   border-radius: 4px;
+  cursor: pointer;
+}
+
+.control-label {
   cursor: pointer;
 }
 
@@ -1227,7 +1233,7 @@ input[type=number] {
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
-  opacity: 0.6;
+  background-color: #f2f2f2;
 
   border: none;
   border-radius: 4px 0 0 4px;
@@ -1288,7 +1294,7 @@ input[type=number] {
   position: relative;
 
   width: 717px;
-  margin: 396px 488px auto auto;
+  margin: 396px auto auto auto;
   padding: 64px 70px;
 
   border-radius: 30px;
