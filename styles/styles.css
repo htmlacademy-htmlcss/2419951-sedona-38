@@ -247,6 +247,7 @@ body {
   padding: 102px 85px;
   width: 400px;
   height: 100%;
+  min-height: 385px;
 }
 
 .advantages-title:after {
@@ -784,6 +785,7 @@ input[type=number] {
 
 .hotels-search-pagination {
   display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
 
@@ -895,8 +897,8 @@ input[type=number] {
 
 .hotels-search-pagination-button {
   display: block;
-  width: 60px;
-  height: 60px;
+  min-width: 60px;
+  min-height: 60px;
   padding: 11.364px 18.545px 12.636px 18.455px;
 
   font-family: inherit;
@@ -1416,10 +1418,13 @@ input[type=number] {
 
 .adults-label {
   grid-area: adults-label;
+  word-break: break-word;
+  max-width: 100px;
 }
 
 .children-label {
-
+  word-break: break-word;
+  max-width: 80px;
 }
 
 .form-label {
