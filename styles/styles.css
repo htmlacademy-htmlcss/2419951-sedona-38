@@ -362,7 +362,7 @@ body {
   margin: 0;
   padding: 0;
   list-style-type: none;
-  align-items: center;
+  align-items: stretch;
 }
 
 .services-list-item {
@@ -1049,7 +1049,7 @@ input[type=number] {
 
 .button-medium {
   display: inline-block;
-  height: 52px;
+  min-height: 52px;
   padding: 8px 50px;
 
   font-size: 20px;
