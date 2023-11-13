@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <title>HTML Academy: Отели в Седоне</title>
   <link rel="stylesheet" href="styles/styles.css">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
 <div class="wrapper">
@@ -61,20 +62,23 @@
             <ul class="hotels-search-filter-list">
               <li class="hotels-search-filter-list-item">
                 <label class="control">
-                  <input class="control-input" type="checkbox" checked name="Swimming pool">
-                  Бассейн
+                  <input class="visually-hidden control-input" type="checkbox" name="swimming-pool" checked>
+                  <span class="control-mark"></span>
+                  <span class="control-label">Бассейн</span>
                 </label>
               </li>
               <li class="hotels-search-filter-list-item">
                 <label class="control">
-                  <input class="control-input" type="checkbox" checked name="Parking">
-                  Паркова
+                  <input class="visually-hidden control-input" type="checkbox" name="parking" checked>
+                  <span class="control-mark"></span>
+                  <span class="control-label">Парковка</span>
                 </label>
               </li>
               <li class="hotels-search-filter-list-item">
                 <label class="control">
-                  <input class="control-input" type="checkbox" name="Wi-Fi">
-                  Wi-Fi
+                  <input class="visually-hidden control-input" type="checkbox" name="wi-fi">
+                  <span class="control-mark"></span>
+                  <span class="control-label">Wi-Fi</span>
                 </label>
               </li>
             </ul>
@@ -84,35 +88,48 @@
             <ul class="hotels-search-filter-list">
               <li class="hotels-search-filter-list-item">
                 <label class="control">
-                  <input class="control-input" type="radio" checked name="accommodation-type">
-                  Гостиница
+                  <input class="visually-hidden control-input" type="radio" name="accommodation-type" value="hotel"
+                         checked>
+                  <span class="control-mark"></span>
+                  <span class="control-label">Гостиница</span>
                 </label>
               </li>
               <li class="hotels-search-filter-list-item">
                 <label class="control">
-                  <input class="control-input" type="radio" name="accommodation-type">
-                  Мотель
+                  <input class="visually-hidden control-input" type="radio" name="accommodation-type" value="motel">
+                  <span class="control-mark"></span>
+                  <span class="control-label">Мотель</span>
                 </label>
               </li>
               <li class="hotels-search-filter-list-item">
                 <label class="control">
-                  <input class="control-input" type="radio" name="accommodation-type">
-                  Апартаменты
+                  <input class="visually-hidden control-input" type="radio" name="accommodation-type" value="apartments">
+                  <span class="control-mark"></span>
+                  <span class="control-label">Апартаменты</span>
                 </label>
               </li>
             </ul>
           </fieldset>
           <fieldset class="hotels-search-filter-group">
             <legend class="hotels-search-filter-title">Стоимость, ₽:</legend>
-            <div class="cost-range-input-wrapper">
-              <label><input class="cost-range-input" type="text" value="0" name="cost-min" size="6" maxlength="7"><span
-                class="from-placeholder">от</span></label>
-              <label><input class="cost-range-input" type="text" value="9000" name="cost-max" size="7"
-                            maxlength="7"><span
-                class="to-placeholder">до</span></label>
+            <div class="range">
+              <div class="cost-range-input-wrapper">
+                <label><input class="cost-range-input" type="number" name="min-price" value="0" max="999999"
+                              min="0"><span class="from-to-placeholder">от</span></label>
+                <label><input class="cost-range-input" type="number" name="max-price" value="9000" max="999999"
+                              min="1"><span class="from-to-placeholder">до</span></label>
+              </div>
+              <div class="range-scale">
+                <div class="range-bar" style="left: 0; width: 226px">
+                  <button class="range-toggle toggle-min" type="button">
+                    <span class="visually-hidden">Изменить минимальную цену</span>
+                  </button>
+                  <button class="range-toggle toggle-max" type="button">
+                    <span class="visually-hidden">Изменить максимальную цену</span>
+                  </button>
+                </div>
+              </div>
             </div>
-            <!--    <input type="range" multiple name="" min="0" max="12000" value="9000" step="100" />-->
-            <!--    вроде такй multirange еще не умеем делать -->
           </fieldset>
           <div class="hotels-search-buttons-wrapper">
             <button class="button-small button-alternative-style" type="submit">Применить</button>
@@ -139,7 +156,7 @@
                 fill="none"
                 role="img"
                 aria-label="Показать мелкие значки.">
-                <path fill="#000"
+                <path fill="#000000"
                       d="M4 0H0v6h4V0ZM16 0h-4v6h4V0ZM10 0H6v6h4V0ZM4 8H0v6h4V8ZM16 8h-4v6h4V8ZM10 8H6v6h4V8Z"/>
               </svg>
             </a>
@@ -154,7 +171,7 @@
                 fill="none"
                 role="img"
                 aria-label="Показать крупные значки.">
-                <path fill="#000"
+                <path fill="#000000"
                       d="M16 12H0v2h16v-2ZM14 2v6H2V2h12Zm2-2H0v10h16V0Z"/>
               </svg>
             </a>
@@ -169,7 +186,7 @@
                 fill="none"
                 role="img"
                 aria-label="Показать списком.">
-                <path fill="#000"
+                <path fill="#000000"
                       d="M2 0H0v2h2V0ZM16 0H4v2h12V0ZM2 4H0v2h2V4ZM16 4H4v2h12V4ZM2 8H0v2h2V8ZM16 8H4v2h12V8ZM2 12H0v2h2v-2ZM16 12H4v2h12v-2Z"/>
               </svg>
             </a>
@@ -184,8 +201,9 @@
                    height="212" alt="Каньон и звездное небо.">
             </a>
             <h3 class="hotel-name">Amara Resort & Spa</h3>
-            <p>Гостиница <span class="right-aligned">От 4000 ₽</span></p>
             <div class="inner-hotel-card-wrapper">
+              <span>Гостиница</span>
+              <span class="right-aligned">От 4000 ₽</span>
               <a class="button-small hotel-card-button-small button-primary-style" href="#">ПОДРОБНЕЕ</a>
               <button class="button-small hotel-card-button-small button-alternative-style" type="button">В ИЗБРАННОЕ
               </button>
@@ -202,8 +220,9 @@
                    alt="Вид на Поко Диабло.">
             </a>
             <h3 class="hotel-name">Villas at Poco Diablo</h3>
-            <p>Гостиница <span class="right-aligned">От 5000 ₽</span></p>
             <div class="inner-hotel-card-wrapper">
+              <span>Гостиница</span>
+              <span class="right-aligned">От 5000 ₽</span>
               <a class="button-small button-primary-style" href="#">ПОДРОБНЕЕ</a>
               <button class="button-small hotel-card-button-small button-already-selected-style" type="button">В
                 ИЗБРАННОМ
@@ -221,8 +240,9 @@
                    height="212" alt="Гора и голубое небо.">
             </a>
             <h3 class="hotel-name">Desert Quail Inn</h3>
-            <p>Гостиница <span class="right-aligned">От 2500 ₽</span></p>
             <div class="inner-hotel-card-wrapper">
+              <span>Гостиница</span>
+              <span class="right-aligned">От 2500 ₽</span>
               <a class="button-small button-primary-style" href="#">ПОДРОБНЕЕ</a>
               <button class="button-small hotel-card-button-small button-alternative-style" type="button">В ИЗБРАННОЕ
               </button>
@@ -239,8 +259,9 @@
                    height="212" alt="Скала под ночным звездным небом.">
             </a>
             <h3 class="hotel-name">GreenTree Inn</h3>
-            <p>Гостиница <span class="right-aligned">От 1500 ₽</span></p>
             <div class="inner-hotel-card-wrapper">
+              <span>Гостиница</span>
+              <span class="right-aligned">От 1500 ₽</span>
               <a class="button-small button-primary-style" href="#">ПОДРОБНЕЕ</a>
               <button class="button-small hotel-card-button-small button-alternative-style" type="button">В ИЗБРАННОЕ
               </button>
@@ -310,7 +331,7 @@
               xmlns="http://www.w3.org/2000/svg"
               width="25"
               height="15"
-              fill="#83B3D3"
+              fill="#83b3d3"
               role="img"
               aria-label="Мы во Вконтакте.">
               <path fill-rule="evenodd" clip-rule="evenodd"
@@ -325,7 +346,7 @@
               xmlns="http://www.w3.org/2000/svg"
               width="18"
               height="16"
-              fill="#83B3D3"
+              fill="#83b3d3"
               role="img"
               aria-label="Мы в Телеграме.">
               <path fill-rule="evenodd" clip-rule="evenodd"
@@ -340,7 +361,7 @@
               xmlns="http://www.w3.org/2000/svg"
               width="23"
               height="18"
-              fill="#83B3D3"
+              fill="#83b3d3"
               role="img"
               aria-label="Мы в Ютубе.">
               <path fill-rule="evenodd" clip-rule="evenodd"
