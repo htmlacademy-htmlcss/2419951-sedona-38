@@ -129,7 +129,7 @@
           <p class="subscription-call-to-action">Подпишитесь на рассылку</p>
           <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
           <div class="newsletter-email-wrapper">
-            <label for="newsletter-email" hidden>Email</label>
+            <label class="visually-hidden" for="newsletter-email">Email</label>
             <input class="newsletter-email-field" type="email" placeholder="Ваш e-mail" name="newsletter-email"
                    id="newsletter-email"
                    required>
@@ -227,7 +227,7 @@
           <input class="field-date1" type="text" name="departure-date" id="departure-date"
                  value="1 сентября 2023" placeholder="Укажите дату">
           <span class="dates-available-warning">На эти даты есть свободные номера. Пока есть.</span>
-          <label for="field-people" class="adults-label">Взрослые:</label>
+          <label class="adults-label" for="field-adult">Взрослые:</label>
           <div class="adult-quantity-wrapper">
             <button class="minus-button quantity-button" type="button">
               <svg width="20"
@@ -237,11 +237,11 @@
                    fill-opacity="0.3"
                    xmlns="http://www.w3.org/2000/svg"
                    role="img"
-                   aria-label="Минус.">
+                   aria-label="Убрать одного взрослого.">
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M3 9V11H17V9H3Z"/>
               </svg>
             </button>
-            <input class="adults-input" id="field-people" type="number" name="adult-quantity" value="2"
+            <input class="hotel-guests-quantity-input" id="field-adult" name="adult-quantity" type="number" value="2"
                    max="99">
             <button class="plus-button quantity-button" type="button">
               <svg width="20"
@@ -251,7 +251,7 @@
                    fill-opacity="0.3"
                    xmlns="http://www.w3.org/2000/svg"
                    role="img"
-                   aria-label="Плюс.">
+                   aria-label="Добавить одного взрослого.">
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M17 9H11V3H9V9H3V11H9V17H11V11H17V9Z"/>
               </svg>
             </button>
@@ -268,7 +268,7 @@
                          fill="none"
                          xmlns="http://www.w3.org/2000/svg"
                          role="img"
-                         aria-label="Текст тултипа.">
+                         aria-label="Пояснение про детей.">
                       <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H2V2H0V0ZM2 12H0V3H2V12Z" fill="white"/>
                     </svg>
                 </button>
@@ -284,11 +284,11 @@
                    fill-opacity="0.3"
                    xmlns="http://www.w3.org/2000/svg"
                    role="img"
-                   aria-label="Минус.">
+                   aria-label="Убрать одного ребенка.">
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M3 9V11H17V9H3Z"/>
               </svg>
             </button>
-            <input class="adults-input" id="field-child" type="number" name="children-quantity" value="2"
+            <input class="hotel-guests-quantity-input" id="field-child" name="children-quantity" type="number" value="2"
                    max="99">
             <button class="plus-button quantity-button" type="button">
               <svg width="20"
@@ -298,7 +298,7 @@
                    fill-opacity="0.3"
                    xmlns="http://www.w3.org/2000/svg"
                    role="img"
-                   aria-label="Плюс.">
+                   aria-label="Добавить одного ребенка.">
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M17 9H11V3H9V9H3V11H9V17H11V11H17V9Z"/>
               </svg>
             </button>
