@@ -140,7 +140,7 @@ body {
   padding: 22px 12px;
 }
 
-.navigation-user .navigation-item:last-child .navigation-link {
+.navigation-item:last-child .favourites-link {
   position: relative;
 }
 
