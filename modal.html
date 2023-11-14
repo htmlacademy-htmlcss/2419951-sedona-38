@@ -3,14 +3,14 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона, преимущества и сервис</title>
-  <link rel="icon" type="image/x-icon" sizes="32x32" href="images/favicon-32x32.png">
-  <link rel="stylesheet" href="styles/styles.css">
+  <link href="images/favicon-32x32.png" rel="icon" sizes="32x32" type="image/x-icon">
+  <link href="styles/styles.css" rel="stylesheet">
 </head>
 <body>
 <div class="wrapper">
   <header class="page-header header-container" data-test="header">
     <a class="header-logo">
-      <img src="images/city-of-sedona-logo.svg" width="140" height="70" alt="Логотип Sedona.">
+      <img alt="Логотип Sedona." height="70" src="images/city-of-sedona-logo.svg" width="140">
     </a>
     <nav class="navigation">
       <ul class="navigation-list">
@@ -27,12 +27,12 @@
       <ul class="navigation-list navigation-user">
         <li class="navigation-item">
           <a class="navigation-link" href="#">
-            <img src="images/search-icon.svg" width="19" height="19" alt="Поиск.">
+            <img alt="Поиск." height="19" src="images/search-icon.svg" width="19">
           </a>
         </li>
         <li class="navigation-item">
           <a class="navigation-link favourites-link" href="#">
-            <img src="images/favourites-icon.svg" width="18" height="17" alt="Избранное.">
+            <img alt="Избранное." height="17" src="images/favourites-icon.svg" width="18">
           </a>
         </li>
       </ul>
@@ -42,8 +42,8 @@
   <main class="main-index main-container" data-test="main">
     <section class="hero" data-test="hero">
       <h1 class="visually-hidden">Сайт города Седона</h1>
-      <img src="images/welcome-to-sedona-with-slogan.svg" width="458" height="352"
-           alt="Welcome to the gorgeous Sedona. 'Because the Grand Canyon sucks!'">
+      <img alt="Welcome to the gorgeous Sedona. 'Because the Grand Canyon sucks!'" height="352" src="images/welcome-to-sedona-with-slogan.svg"
+           width="458">
     </section>
     <section class="advantages" data-test="advantages">
       <div class="advantage-header-and-slogan-wrapper">
@@ -58,7 +58,7 @@
             <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
           </div>
           <div class="advantage-image-wrapper">
-            <img src="images/sedona-town.jpg" width="800" height="385" alt="Фотография дома в Седоне.">
+            <img alt="Фотография дома в Седоне." height="385" src="images/sedona-town.jpg" width="800">
           </div>
         </li>
         <li class="advantages-list-item">
@@ -85,7 +85,7 @@
             <p>Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
           </div>
           <div class="advantage-image-wrapper">
-            <img src="images/devil-bridge.jpg" width="800" height="385" alt="Вид на мост дьявола.">
+            <img alt="Вид на мост дьявола." height="385" src="images/devil-bridge.jpg" width="800">
           </div>
         </li>
       </ul>
@@ -130,9 +130,9 @@
           <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
           <div class="newsletter-email-wrapper">
             <label class="visually-hidden" for="newsletter-email">Email</label>
-            <input class="newsletter-email-field" type="email" placeholder="Ваш e-mail" name="newsletter-email"
-                   id="newsletter-email"
-                   required>
+            <input class="newsletter-email-field" id="newsletter-email" name="newsletter-email" placeholder="Ваш e-mail"
+                   required
+                   type="email">
             <button class="button-medium button-alternative-style newsletter-button" type="submit">Подписаться</button>
           </div>
         </form>
@@ -147,14 +147,14 @@
           <a class="socials-link" href="https://vk.com/htmlacademy">
             <svg
               class="socials-icon"
-              xmlns="http://www.w3.org/2000/svg"
-              width="25"
+              aria-label="Мы во Вконтакте."
               height="15"
+              width="25"
               fill="#83b3d3"
               role="img"
-              aria-label="Мы во Вконтакте.">
-              <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M24.12 1.8c.16-.54 0-.94-.8-.94H20.7c-.67 0-.98.34-1.15.73 0 0-1.33 3.2-3.22 5.27-.61.6-.9.8-1.23.8-.16 0-.41-.2-.41-.75v-5.1c0-.66-.19-.95-.74-.95H9.82c-.42 0-.67.3-.67.59 0 .62.95.76 1.04 2.51v3.8c0 .83-.15.98-.48.98-.9 0-3.06-3.2-4.34-6.88-.25-.72-.5-1-1.18-1H1.57c-.75 0-.9.34-.9.73 0 .68.89 4.07 4.14 8.55 2.17 3.06 5.23 4.72 8 4.72 1.68 0 1.88-.37 1.88-1v-2.32c0-.74.16-.88.7-.88.38 0 1.05.19 2.6 1.66 1.79 1.75 2.08 2.54 3.08 2.54h2.63c.75 0 1.12-.37.9-1.1-.23-.72-1.08-1.77-2.2-3.02-.62-.71-1.54-1.48-1.82-1.86-.39-.5-.28-.71 0-1.15 0 0 3.2-4.42 3.54-5.93Z"/>
+              xmlns="http://www.w3.org/2000/svg">
+              <path clip-rule="evenodd" d="M24.12 1.8c.16-.54 0-.94-.8-.94H20.7c-.67 0-.98.34-1.15.73 0 0-1.33 3.2-3.22 5.27-.61.6-.9.8-1.23.8-.16 0-.41-.2-.41-.75v-5.1c0-.66-.19-.95-.74-.95H9.82c-.42 0-.67.3-.67.59 0 .62.95.76 1.04 2.51v3.8c0 .83-.15.98-.48.98-.9 0-3.06-3.2-4.34-6.88-.25-.72-.5-1-1.18-1H1.57c-.75 0-.9.34-.9.73 0 .68.89 4.07 4.14 8.55 2.17 3.06 5.23 4.72 8 4.72 1.68 0 1.88-.37 1.88-1v-2.32c0-.74.16-.88.7-.88.38 0 1.05.19 2.6 1.66 1.79 1.75 2.08 2.54 3.08 2.54h2.63c.75 0 1.12-.37.9-1.1-.23-.72-1.08-1.77-2.2-3.02-.62-.71-1.54-1.48-1.82-1.86-.39-.5-.28-.71 0-1.15 0 0 3.2-4.42 3.54-5.93Z"
+                    fill-rule="evenodd"/>
             </svg>
           </a>
         </li>
@@ -162,14 +162,14 @@
           <a class="socials-link" href="https://t.me/htmlacademy ">
             <svg
               class="socials-icon"
-              xmlns="http://www.w3.org/2000/svg"
-              width="18"
-              height="16"
+              aria-label="Мы в Телеграме."
               fill="#83b3d3"
+              height="16"
+              width="18"
               role="img"
-              aria-label="Мы в Телеграме.">
-              <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M16.79.96.84 7.1c-1.09.44-1.08 1.05-.2 1.32l4.1 1.28 9.47-5.98c.44-.27.85-.13.52.17l-7.68 6.93-.28 4.22c.41 0 .6-.2.83-.41l1.99-1.94 4.13 3.06c.77.42 1.31.2 1.5-.71l2.72-12.8c.28-1.1-.43-1.61-1.16-1.28Z"/>
+              xmlns="http://www.w3.org/2000/svg">
+              <path clip-rule="evenodd" d="M16.79.96.84 7.1c-1.09.44-1.08 1.05-.2 1.32l4.1 1.28 9.47-5.98c.44-.27.85-.13.52.17l-7.68 6.93-.28 4.22c.41 0 .6-.2.83-.41l1.99-1.94 4.13 3.06c.77.42 1.31.2 1.5-.71l2.72-12.8c.28-1.1-.43-1.61-1.16-1.28Z"
+                    fill-rule="evenodd"/>
             </svg>
           </a>
         </li>
@@ -177,14 +177,14 @@
           <a class="socials-link" href="https://www.youtube.com/user/htmlacademyru">
             <svg
               class="socials-icon"
-              xmlns="http://www.w3.org/2000/svg"
-              width="23"
+              aria-label="Мы в Ютубе."
               height="18"
+              width="23"
               fill="#83b3d3"
               role="img"
-              aria-label="Мы в Ютубе.">
-              <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M18.94.36H3.51C1.65.36.33 1.95.33 3.76v10.09c0 1.91 1.32 3.5 3.18 3.5h15.65c1.64 0 3.17-1.59 3.17-3.4V3.76c-.22-1.8-1.53-3.4-3.39-3.4ZM7.99 12.89V4.82l7.34 4.04-7.34 4.03Z"/>
+              xmlns="http://www.w3.org/2000/svg">
+              <path clip-rule="evenodd" d="M18.94.36H3.51C1.65.36.33 1.95.33 3.76v10.09c0 1.91 1.32 3.5 3.18 3.5h15.65c1.64 0 3.17-1.59 3.17-3.4V3.76c-.22-1.8-1.53-3.4-3.39-3.4ZM7.99 12.89V4.82l7.34 4.04-7.34 4.03Z"
+                    fill-rule="evenodd"/>
             </svg>
           </a>
         </li>
@@ -199,107 +199,107 @@
       <a class="html-academy-link" href="https://htmlacademy.ru/">
         <svg
           class="html-academy-logo"
-          xmlns="http://www.w3.org/2000/svg"
-          width="115"
-          height="34"
+          aria-label="Логотип html-academy."
           fill="black"
+          height="34"
+          width="115"
           role="img"
-          aria-label="Логотип html-academy.">
-          <path fill-rule="evenodd" clip-rule="evenodd"
-                d="M0 13.26v2.6h2.5v-2.6H0ZM11.6 4.86c-1.6 0-2.8.7-3.6 1.7h-.1V.36h-2v15.5h2v-5.3c0-2.1 1.3-3.6 3.3-3.6 1.8 0 2.9 1.4 2.9 3.2v5.7h2v-6.1c.1-3-1.8-4.9-4.5-4.9ZM26.6 5.16h-4.8v-3.7h-2v3.8h-1.9v2h1.9v6c0 1.7 1 2.7 2.7 2.7h4.1v-2h-3.7c-.7 0-1.1-.4-1.1-1.1v-5.7h4.8v-2ZM41.1 4.96c-1.6 0-2.9.8-3.5 2.1h-.1c-.6-1.2-1.8-2.1-3.4-2.1-1.4 0-2.5.8-3.1 1.8h-.1v-1.6H29v10.6h2v-5.4c0-2 1-3.5 2.6-3.5 1.5 0 2.4 1 2.4 2.6v6.3h2v-5.6c0-2.4 1.4-3.3 2.6-3.3 1.5 0 2.4 1 2.4 2.6v6.3h2v-6.5c.1-2.5-1.4-4.3-3.9-4.3ZM47.8 13.06c0 1.7 1 2.7 2.8 2.7h2v-2h-1.7c-.7 0-1.1-.4-1.1-1.1V.36h-2v12.7ZM28.9 20.06c-.9-1.1-2.2-1.8-3.9-1.8-3.1 0-5.4 2.3-5.4 5.6s2.3 5.6 5.4 5.6c1.8 0 3-.8 3.8-1.9h.1v1.6h2v-10.6h-2v1.5Zm-3.6 7.4c-2.2 0-3.6-1.6-3.6-3.6s1.4-3.6 3.6-3.6 3.6 1.6 3.6 3.6c0 1.9-1.4 3.6-3.6 3.6ZM44.2 22.36c-.5-2.4-2.6-4.1-5.4-4.1a5.4 5.4 0 0 0-5.6 5.6c0 3.1 2.2 5.6 5.6 5.6 2.8 0 4.9-1.8 5.4-4.2h-2.1a3.4 3.4 0 0 1-3.3 2.3c-2.2 0-3.6-1.6-3.6-3.6s1.4-3.6 3.6-3.6c1.6 0 2.8 1 3.3 2.2h2.1v-.2ZM55.1 20.06c-.9-1.1-2.2-1.8-3.9-1.8-3.1 0-5.4 2.3-5.4 5.6s2.3 5.6 5.4 5.6c1.8 0 3-.8 3.8-1.9h.1v1.6h2v-10.6h-2v1.5Zm-3.6 7.4c-2.2 0-3.6-1.6-3.6-3.6s1.4-3.6 3.6-3.6 3.6 1.6 3.6 3.6c0 1.9-1.5 3.6-3.6 3.6ZM68.7 20.16c-.9-1.1-2.2-1.9-3.9-1.9-3.1 0-5.4 2.3-5.4 5.6s2.2 5.6 5.4 5.6c1.7 0 3-.8 3.8-1.8h.1v1.5h2v-15.4h-2v6.4Zm-3.6 7.3c-2.2 0-3.6-1.6-3.6-3.6s1.4-3.6 3.6-3.6 3.6 1.6 3.6 3.6c-.1 2-1.5 3.6-3.6 3.6ZM78.3 18.26c-3.3 0-5.5 2.5-5.5 5.6 0 3 2.1 5.6 5.5 5.6 2.5 0 4.5-1.3 5.2-3.6h-2.1c-.5 1-1.6 1.6-3 1.6-1.9 0-3.3-1.3-3.4-2.9h8.8c.2-3.6-2-6.3-5.5-6.3Zm0 1.9c1.7 0 3 1 3.3 2.6h-6.5c.3-1.5 1.5-2.6 3.2-2.6ZM98.2 18.26c-1.6 0-2.9.8-3.6 2h-.1c-.6-1.2-1.8-2-3.4-2-1.4 0-2.5.7-3.1 1.8v-1.5h-1.9v10.6h2v-5.4c0-2 1-3.4 2.6-3.5 1.5 0 2.4 1 2.4 2.6v6.3h2v-5.6c0-2.4 1.4-3.3 2.6-3.3 1.5 0 2.4 1 2.4 2.6v6.3h2v-6.5c.1-2.6-1.4-4.4-3.9-4.4ZM109.4 27.36l-3.6-8.9h-2.2l4.8 11.6c-.3.9-.7 1.2-1.7 1.2h-2.5v2h2.5c1.8 0 2.8-.8 3.5-2.6l4.7-12.2h-2.1l-3.4 8.9Z"/>
+          xmlns="http://www.w3.org/2000/svg">
+          <path clip-rule="evenodd" d="M0 13.26v2.6h2.5v-2.6H0ZM11.6 4.86c-1.6 0-2.8.7-3.6 1.7h-.1V.36h-2v15.5h2v-5.3c0-2.1 1.3-3.6 3.3-3.6 1.8 0 2.9 1.4 2.9 3.2v5.7h2v-6.1c.1-3-1.8-4.9-4.5-4.9ZM26.6 5.16h-4.8v-3.7h-2v3.8h-1.9v2h1.9v6c0 1.7 1 2.7 2.7 2.7h4.1v-2h-3.7c-.7 0-1.1-.4-1.1-1.1v-5.7h4.8v-2ZM41.1 4.96c-1.6 0-2.9.8-3.5 2.1h-.1c-.6-1.2-1.8-2.1-3.4-2.1-1.4 0-2.5.8-3.1 1.8h-.1v-1.6H29v10.6h2v-5.4c0-2 1-3.5 2.6-3.5 1.5 0 2.4 1 2.4 2.6v6.3h2v-5.6c0-2.4 1.4-3.3 2.6-3.3 1.5 0 2.4 1 2.4 2.6v6.3h2v-6.5c.1-2.5-1.4-4.3-3.9-4.3ZM47.8 13.06c0 1.7 1 2.7 2.8 2.7h2v-2h-1.7c-.7 0-1.1-.4-1.1-1.1V.36h-2v12.7ZM28.9 20.06c-.9-1.1-2.2-1.8-3.9-1.8-3.1 0-5.4 2.3-5.4 5.6s2.3 5.6 5.4 5.6c1.8 0 3-.8 3.8-1.9h.1v1.6h2v-10.6h-2v1.5Zm-3.6 7.4c-2.2 0-3.6-1.6-3.6-3.6s1.4-3.6 3.6-3.6 3.6 1.6 3.6 3.6c0 1.9-1.4 3.6-3.6 3.6ZM44.2 22.36c-.5-2.4-2.6-4.1-5.4-4.1a5.4 5.4 0 0 0-5.6 5.6c0 3.1 2.2 5.6 5.6 5.6 2.8 0 4.9-1.8 5.4-4.2h-2.1a3.4 3.4 0 0 1-3.3 2.3c-2.2 0-3.6-1.6-3.6-3.6s1.4-3.6 3.6-3.6c1.6 0 2.8 1 3.3 2.2h2.1v-.2ZM55.1 20.06c-.9-1.1-2.2-1.8-3.9-1.8-3.1 0-5.4 2.3-5.4 5.6s2.3 5.6 5.4 5.6c1.8 0 3-.8 3.8-1.9h.1v1.6h2v-10.6h-2v1.5Zm-3.6 7.4c-2.2 0-3.6-1.6-3.6-3.6s1.4-3.6 3.6-3.6 3.6 1.6 3.6 3.6c0 1.9-1.5 3.6-3.6 3.6ZM68.7 20.16c-.9-1.1-2.2-1.9-3.9-1.9-3.1 0-5.4 2.3-5.4 5.6s2.2 5.6 5.4 5.6c1.7 0 3-.8 3.8-1.8h.1v1.5h2v-15.4h-2v6.4Zm-3.6 7.3c-2.2 0-3.6-1.6-3.6-3.6s1.4-3.6 3.6-3.6 3.6 1.6 3.6 3.6c-.1 2-1.5 3.6-3.6 3.6ZM78.3 18.26c-3.3 0-5.5 2.5-5.5 5.6 0 3 2.1 5.6 5.5 5.6 2.5 0 4.5-1.3 5.2-3.6h-2.1c-.5 1-1.6 1.6-3 1.6-1.9 0-3.3-1.3-3.4-2.9h8.8c.2-3.6-2-6.3-5.5-6.3Zm0 1.9c1.7 0 3 1 3.3 2.6h-6.5c.3-1.5 1.5-2.6 3.2-2.6ZM98.2 18.26c-1.6 0-2.9.8-3.6 2h-.1c-.6-1.2-1.8-2-3.4-2-1.4 0-2.5.7-3.1 1.8v-1.5h-1.9v10.6h2v-5.4c0-2 1-3.4 2.6-3.5 1.5 0 2.4 1 2.4 2.6v6.3h2v-5.6c0-2.4 1.4-3.3 2.6-3.3 1.5 0 2.4 1 2.4 2.6v6.3h2v-6.5c.1-2.6-1.4-4.4-3.9-4.4ZM109.4 27.36l-3.6-8.9h-2.2l4.8 11.6c-.3.9-.7 1.2-1.7 1.2h-2.5v2h2.5c1.8 0 2.8-.8 3.5-2.6l4.7-12.2h-2.1l-3.4 8.9Z"
+                fill-rule="evenodd"/>
         </svg>
       </a>
     </section>
   </footer>
-  <div class="modal-container modal-container-close">
+  <div class="modal-container">
     <div class="modal-hotel-search">
       <button class="modal-close-button" type="button">
         <span class="visually-hidden">Закрыть</span>
       </button>
       <section class="modal-content">
         <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
-        <form class="hotel-search-form" action="https://echo.htmlacademy.ru/" method="post">
-          <label for="arrival-date" class="arrival-date">Дата заезда:</label>
-          <input class="field-date" type="text" name="arrival-date" id="arrival-date"
-                 value="27 апреля 2020" placeholder="Укажите дату">
+        <form action="https://echo.htmlacademy.ru/" class="hotel-search-form" method="post">
+          <label class="arrival-date" for="arrival-date">Дата заезда:</label>
+          <input class="field-date" id="arrival-date" name="arrival-date" placeholder="Укажите дату"
+                 type="text" value="27 апреля 2020">
           <span class="modal-error">Мы не можем отправить вас в прошлое.</span>
-          <label for="departure-date" class="departure-date">Дата выезда:</label>
-          <input class="field-date1" type="text" name="departure-date" id="departure-date"
-                 value="1 сентября 2023" placeholder="Укажите дату">
+          <label class="departure-date" for="departure-date">Дата выезда:</label>
+          <input class="field-date1" id="departure-date" name="departure-date" placeholder="Укажите дату"
+                 type="text" value="1 сентября 2023">
           <span class="dates-available-warning">На эти даты есть свободные номера. Пока есть.</span>
           <label class="adults-label" for="field-adult">Взрослые:</label>
           <div class="adult-quantity-wrapper">
             <button class="minus-button quantity-button" type="button">
-              <svg width="20"
+              <svg aria-label="Убрать одного взрослого."
                    height="20"
                    viewBox="0 0 20 20"
                    fill="#756157"
                    fill-opacity="0.3"
-                   xmlns="http://www.w3.org/2000/svg"
+                   width="20"
                    role="img"
-                   aria-label="Убрать одного взрослого.">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M3 9V11H17V9H3Z"/>
+                   xmlns="http://www.w3.org/2000/svg">
+                <path clip-rule="evenodd" d="M3 9V11H17V9H3Z" fill-rule="evenodd"/>
               </svg>
             </button>
-            <input class="hotel-guests-quantity-input" id="field-adult" name="adult-quantity" type="number" value="2"
-                   max="99">
+            <input class="hotel-guests-quantity-input" id="field-adult" max="99" name="adult-quantity" type="number"
+                   value="2">
             <button class="plus-button quantity-button" type="button">
-              <svg width="20"
+              <svg aria-label="Добавить одного взрослого."
                    height="20"
                    viewBox="0 0 20 20"
                    fill="#756157"
                    fill-opacity="0.3"
-                   xmlns="http://www.w3.org/2000/svg"
+                   width="20"
                    role="img"
-                   aria-label="Добавить одного взрослого.">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M17 9H11V3H9V9H3V11H9V17H11V11H17V9Z"/>
+                   xmlns="http://www.w3.org/2000/svg">
+                <path clip-rule="evenodd" d="M17 9H11V3H9V9H3V11H9V17H11V11H17V9Z" fill-rule="evenodd"/>
               </svg>
             </button>
           </div>
           <span class="form-label">
-            <label for="field-child" class="children-label">Дети:</label>
+            <label class="children-label" for="field-child">Дети:</label>
               <span class="tooltip">
-                <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label-number-of-children"
-                        id="tooltip-label-date">
-                    <svg class="tooltip-icon"
-                         width="2"
+                <button aria-labelledby="tooltip-label-number-of-children" class="tooltip-toggle" id="tooltip-label-date"
+                        type="button">
+                    <svg aria-label="Пояснение про детей."
+                         class="tooltip-icon"
                          height="12"
                          viewBox="0 0 2 12"
                          fill="none"
-                         xmlns="http://www.w3.org/2000/svg"
+                         width="2"
                          role="img"
-                         aria-label="Пояснение про детей.">
-                      <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H2V2H0V0ZM2 12H0V3H2V12Z" fill="white"/>
+                         xmlns="http://www.w3.org/2000/svg">
+                      <path clip-rule="evenodd" d="M0 0H2V2H0V0ZM2 12H0V3H2V12Z" fill="white" fill-rule="evenodd"/>
                     </svg>
                 </button>
-                <span class="tooltip-text" role="tooltip" id="tooltip-label-number-of-children">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+                <span class="tooltip-text" id="tooltip-label-number-of-children" role="tooltip">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
               </span>
           </span>
           <div class="children-quantity-wrapper">
             <button class="minus-button quantity-button" type="button">
-              <svg width="20"
+              <svg aria-label="Убрать одного ребенка."
                    height="20"
                    viewBox="0 0 20 20"
                    fill="#756157"
                    fill-opacity="0.3"
-                   xmlns="http://www.w3.org/2000/svg"
+                   width="20"
                    role="img"
-                   aria-label="Убрать одного ребенка.">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M3 9V11H17V9H3Z"/>
+                   xmlns="http://www.w3.org/2000/svg">
+                <path clip-rule="evenodd" d="M3 9V11H17V9H3Z" fill-rule="evenodd"/>
               </svg>
             </button>
-            <input class="hotel-guests-quantity-input" id="field-child" name="children-quantity" type="number" value="2"
-                   max="99">
+            <input class="hotel-guests-quantity-input" id="field-child" max="99" name="children-quantity" type="number"
+                   value="2">
             <button class="plus-button quantity-button" type="button">
-              <svg width="20"
+              <svg aria-label="Добавить одного ребенка."
                    height="20"
                    viewBox="0 0 20 20"
                    fill="#756157"
                    fill-opacity="0.3"
-                   xmlns="http://www.w3.org/2000/svg"
+                   width="20"
                    role="img"
-                   aria-label="Добавить одного ребенка.">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M17 9H11V3H9V9H3V11H9V17H11V11H17V9Z"/>
+                   xmlns="http://www.w3.org/2000/svg">
+                <path clip-rule="evenodd" d="M17 9H11V3H9V9H3V11H9V17H11V11H17V9Z" fill-rule="evenodd"/>
               </svg>
             </button>
           </div>
