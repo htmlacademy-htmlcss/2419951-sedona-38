@@ -33,6 +33,7 @@
         <li class="navigation-item">
           <a class="navigation-link favourites-link" href="#">
             <img src="images/favourites-icon.svg" width="18" height="17" alt="Избранное.">
+            <output class="favourites-count" name="favourites-count" role="status">12</output>
           </a>
         </li>
       </ul>
@@ -103,7 +104,8 @@
               </li>
               <li class="hotels-search-filter-list-item">
                 <label class="control">
-                  <input class="visually-hidden control-input" type="radio" name="accommodation-type" value="apartments">
+                  <input class="visually-hidden control-input" name="accommodation-type" type="radio"
+                         value="apartments">
                   <span class="control-mark"></span>
                   <span class="control-label">Апартаменты</span>
                 </label>
@@ -195,80 +197,72 @@
       </div>
       <ul class="hotel-list">
         <li class="hotel-card">
-          <div class="hotel-card-wrapper">
-            <a class="hotel-card-link" href="#">
-              <img class="hotel-card-img" src="images/hotel-cards/canyon-promo-amara-resort.jpg" width="300"
-                   height="212" alt="Каньон и звездное небо.">
-            </a>
-            <h3 class="hotel-name">Amara Resort & Spa</h3>
-            <div class="inner-hotel-card-wrapper">
-              <span>Гостиница</span>
-              <span class="right-aligned">От 4000 ₽</span>
-              <a class="button-small hotel-card-button-small button-primary-style" href="#">ПОДРОБНЕЕ</a>
-              <button class="button-small hotel-card-button-small button-alternative-style" type="button">В ИЗБРАННОЕ
-              </button>
-              <img class="category-star-img" src="images/hotel-cards/category-a-hotel.svg" width="140" height="37"
-                   alt="Четырехзвездочный отель">
-              <p class="hotel-rating">РЕЙТИНГ: 8,5</p>
-            </div>
+          <a class="hotel-card-link" href="#">
+            <img alt="Каньон и звездное небо." class="hotel-card-img" height="212"
+                 src="images/hotel-cards/canyon-promo-amara-resort.jpg" width="300">
+          </a>
+          <h3 class="hotel-name">Amara Resort & Spa</h3>
+          <div class="inner-hotel-card-wrapper">
+            <span class="hotel-type">Гостиница</span>
+            <span class="hotel-cost">От 4000 ₽</span>
+            <a class="button-small hotel-card-button-small button-primary-style" href="#">ПОДРОБНЕЕ</a>
+            <button class="button-small hotel-card-button-small button-alternative-style" type="button">В ИЗБРАННОЕ
+            </button>
+            <img alt="Четырехзвездочный отель" class="category-star-img" height="37" src="images/hotel-cards/category-a-hotel.svg"
+                 width="140">
+            <p class="hotel-rating">РЕЙТИНГ: 8,5</p>
           </div>
         </li>
         <li class="hotel-card">
-          <div class="hotel-card-wrapper">
-            <a class="hotel-card-link" href="#">
-              <img class="hotel-card-img" src="images/hotel-cards/poco-diablo-rainbow.jpg" width="300" height="212"
-                   alt="Вид на Поко Диабло.">
-            </a>
-            <h3 class="hotel-name">Villas at Poco Diablo</h3>
-            <div class="inner-hotel-card-wrapper">
-              <span>Гостиница</span>
-              <span class="right-aligned">От 5000 ₽</span>
-              <a class="button-small button-primary-style" href="#">ПОДРОБНЕЕ</a>
-              <button class="button-small hotel-card-button-small button-already-selected-style" type="button">В
-                ИЗБРАННОМ
-              </button>
-              <img class="category-star-img" src="images/hotel-cards/category-a-hotel.svg" width="140" height="37"
-                   alt="Четырехзвездочный отель">
-              <p class="hotel-rating">РЕЙТИНГ: 9,2</p>
-            </div>
+          <a class="hotel-card-link" href="#">
+            <img alt="Вид на Поко Диабло." class="hotel-card-img" height="212" src="images/hotel-cards/poco-diablo-rainbow.jpg"
+                 width="300">
+          </a>
+          <h3 class="hotel-name">Villas at Poco Diablo</h3>
+          <div class="inner-hotel-card-wrapper">
+            <span class="hotel-type">Гостиница</span>
+            <span class="hotel-cost">От 5000 ₽</span>
+            <a class="button-small button-primary-style" href="#">ПОДРОБНЕЕ</a>
+            <button class="button-small hotel-card-button-small button-already-selected-style" type="button">В
+              ИЗБРАННОМ
+            </button>
+            <img alt="Четырехзвездочный отель" class="category-star-img" height="37" src="images/hotel-cards/category-a-hotel.svg"
+                 width="140">
+            <p class="hotel-rating">РЕЙТИНГ: 9,2</p>
           </div>
         </li>
         <li class="hotel-card">
-          <div class="hotel-card-wrapper">
-            <a class="hotel-card-link" href="#">
-              <img class="hotel-card-img" src="images/hotel-cards/mountain-promo-desert-quail-inn.jpg" width="300"
-                   height="212" alt="Гора и голубое небо.">
-            </a>
-            <h3 class="hotel-name">Desert Quail Inn</h3>
-            <div class="inner-hotel-card-wrapper">
-              <span>Гостиница</span>
-              <span class="right-aligned">От 2500 ₽</span>
-              <a class="button-small button-primary-style" href="#">ПОДРОБНЕЕ</a>
-              <button class="button-small hotel-card-button-small button-alternative-style" type="button">В ИЗБРАННОЕ
-              </button>
-              <img class="category-star-img" src="images/hotel-cards/category-b-hotel.svg" width="140" height="37"
-                   alt="Трехзвездочный отель">
-              <p class="hotel-rating">РЕЙТИНГ: 6,9</p>
-            </div>
+          <a class="hotel-card-link" href="#">
+            <img alt="Гора и голубое небо." class="hotel-card-img" height="212"
+                 src="images/hotel-cards/mountain-promo-desert-quail-inn.jpg" width="300">
+          </a>
+          <h3 class="hotel-name">Desert Quail Inn</h3>
+          <div class="inner-hotel-card-wrapper">
+            <span class="hotel-type">Гостиница</span>
+            <span class="hotel-cost">От 2500 ₽</span>
+            <a class="button-small button-primary-style" href="#">ПОДРОБНЕЕ</a>
+            <button class="button-small hotel-card-button-small button-alternative-style" type="button">В ИЗБРАННОЕ
+            </button>
+            <img alt="Трехзвездочный отель" class="category-star-img" height="37" src="images/hotel-cards/category-b-hotel.svg"
+                 width="140">
+            <p class="hotel-rating">РЕЙТИНГ: 6,9</p>
           </div>
         </li>
         <li class="hotel-card">
-          <div class="hotel-card-wrapper">
-            <a class="hotel-card-link" href="#">
-              <img class="hotel-card-img" src="images/hotel-cards/mountain-promo-green-tree-inn.jpg" width="300"
-                   height="212" alt="Скала под ночным звездным небом.">
-            </a>
-            <h3 class="hotel-name">GreenTree Inn</h3>
-            <div class="inner-hotel-card-wrapper">
-              <span>Гостиница</span>
-              <span class="right-aligned">От 1500 ₽</span>
-              <a class="button-small button-primary-style" href="#">ПОДРОБНЕЕ</a>
-              <button class="button-small hotel-card-button-small button-alternative-style" type="button">В ИЗБРАННОЕ
-              </button>
-              <img class="category-star-img" src="images/hotel-cards/category-c-hotel.svg" width="140" height="37"
-                   alt="Двухзвездочный отель">
-              <p class="hotel-rating">РЕЙТИНГ: 5,0</p>
-            </div>
+          <a class="hotel-card-link" href="#">
+            <img alt="Скала под ночным звездным небом." class="hotel-card-img" height="212"
+                 src="images/hotel-cards/mountain-promo-green-tree-inn.jpg" width="300">
+          </a>
+          <h3 class="hotel-name">GreenTree Inn</h3>
+          <div class="inner-hotel-card-wrapper">
+            <span class="hotel-type">Гостиница</span>
+            <span class="hotel-cost">От 1500 ₽</span>
+            <a class="button-small button-primary-style" href="#">ПОДРОБНЕЕ</a>
+            <button class="button-small hotel-card-button-small button-alternative-style" type="button">В ИЗБРАННОЕ
+            </button>
+            <img alt="Двухзвездочный отель" class="category-star-img" height="37" src="images/hotel-cards/category-c-hotel.svg"
+                 width="140">
+            <p class="hotel-rating">РЕЙТИНГ: 5,0</p>
           </div>
         </li>
       </ul>
