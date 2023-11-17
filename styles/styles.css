@@ -76,6 +76,7 @@ body {
 
 .header-container {
   position: relative;
+  z-index: 1;
 
   display: flex;
   align-items: center;
@@ -178,6 +179,8 @@ body {
 }
 
 .hero {
+  position: relative;
+
   padding: 51px 0 82px 0;
   margin-bottom: 69px;
 
@@ -191,6 +194,19 @@ body {
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+
+.hero::after {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+
+  width: 100%;
+  height: 56px;
+
+  background-image: url('../images/divider.svg');
+  background-repeat: no-repeat;
+  content: "";
 }
 
 /* Advantages */
